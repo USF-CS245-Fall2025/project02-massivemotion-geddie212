@@ -1,8 +1,8 @@
 timer_delay = 75
 list = single
 
-window_size_x = 1024
-window_size_y = 768
+window_size_x = 1000
+window_size_y = 700
 
 gen_x = 0.06
 gen_y = 0.06
@@ -10,8 +10,8 @@ body_size = 10
 body_mass = 1E21
 body_velocity = 10
 
-star_position_x = 512
-star_position_y = 384
+star_position_x = 500
+star_position_y = 350
 star_size = 30
 star_mass = 2E29
 star_velocity_x = 0
