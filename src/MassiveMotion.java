@@ -176,7 +176,7 @@ public class MassiveMotion extends JPanel implements ActionListener {
             if (bodies.get(i).isOutOfBounds(window_size_x, window_size_y)){
                 bodies.remove(i);
             }
-            System.out.println("Bodies Array Size:"+bodies.size());
+            //System.out.println("Bodies Array Size:"+bodies.size());
         }
 
         // Keep this at the end of the function (no matter what you do above):

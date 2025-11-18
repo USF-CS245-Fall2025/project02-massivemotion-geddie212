@@ -11,6 +11,7 @@ public class ArrayList<T> implements List<T>{
     /**
      * Constructs an empty ArrayList with an initial capacity of 10.
      */
+    @SuppressWarnings("unchecked")
     public ArrayList(){
         array = (T[]) new Object[10];
         size = 0;
@@ -99,7 +100,7 @@ public class ArrayList<T> implements List<T>{
      * Checks whether the underlying array has enough capacity to add more elements.
      * If not, it will grow the array.
      */
-    public void checkCapacity(){
+    private void checkCapacity(){
         if (size == array.length){
             grow();
         }
@@ -107,7 +108,8 @@ public class ArrayList<T> implements List<T>{
     /**
      * Doubles the capacity of the underlying array when more space is needed.
      */
-    public void grow(){
+    @SuppressWarnings("unchecked")
+    private void grow(){
         T[] newArray = (T[]) new Object[array.length*2];
         for (int i = 0; i < size; i++){
             newArray[i] = array[i];
